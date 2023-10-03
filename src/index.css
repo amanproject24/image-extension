@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Open Sans', 'Source Code Pro' sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', 'Source Code Pro' sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.button-parent {
+  border-radius: 4px;
+  background: #81929A;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main_container{
+  background: linear-gradient(180deg, rgb(192 181 181) 0%, rgb(241 234 234) 61%);
+  width: 100%;
+  padding: 4px;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+}
+
+.total_image {
+  font-family: Source Code Pro;
+}
+
+.filter {
+  color: #000;
+  font-family: Source Code Pro;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.multiselect {
+  width: 200px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.downloard {
+  color: #FFF;
+  font-family: Source Code Pro;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.detail_text {
+  font-family: Source Code Pro;
+}
+
+.result-container {
+  display: inline; 
+  height: auto;
+}
+
+
+/*---*/
+.checkbox-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 6px 6px;
+  border-radius: 2px;
+  color: #000;
+  font-family: Source Code Pro;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: inline-block;
+  /* Display dropdown content inline */
+}
+
+.dropdown-content label {
+  display: block;
+  /* Change display to block */
+  padding: 6px 12px;
+  white-space: nowrap;
+  /* Prevent text from wrapping to the next line */
+}
+
+.dropdown-content label input {
+  margin-right: 6px;
+  /* Add some spacing between checkbox and label */
+}
+
+.dropdown-content label:hover {
+  background-color: #f1f1f1;
+}
+
+.input-label {
+  color: #000;
+  font-family: Source Code Pro;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 2.5px 0px;
+  /* line-height: normal; */
+}
+.open-filter{
+  position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+/* 
+display: inline;
+min-height: 10px;
+height: auto;
+padding-bottom: 10px; */
